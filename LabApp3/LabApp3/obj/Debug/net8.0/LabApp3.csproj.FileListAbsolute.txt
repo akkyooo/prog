@@ -1,0 +1,14 @@
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\bin\Debug\net8.0\LabApp3.exe
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\bin\Debug\net8.0\LabApp3.deps.json
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\bin\Debug\net8.0\LabApp3.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\bin\Debug\net8.0\LabApp3.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\bin\Debug\net8.0\LabApp3.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\refint\LabApp3.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\LabApp3.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp3\LabApp3\obj\Debug\net8.0\ref\LabApp3.dll
