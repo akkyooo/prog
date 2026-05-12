@@ -1,0 +1,14 @@
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\bin\Debug\net8.0\LabApp5.exe
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\bin\Debug\net8.0\LabApp5.deps.json
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\bin\Debug\net8.0\LabApp5.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\bin\Debug\net8.0\LabApp5.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\bin\Debug\net8.0\LabApp5.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\refint\LabApp5.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\LabApp5.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp5\LabApp5\obj\Debug\net8.0\ref\LabApp5.dll
