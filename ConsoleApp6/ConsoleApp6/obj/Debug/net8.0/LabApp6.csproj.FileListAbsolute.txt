@@ -1,0 +1,14 @@
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\net8.0\LabApp6.exe
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\net8.0\LabApp6.deps.json
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\net8.0\LabApp6.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\net8.0\LabApp6.dll
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\net8.0\LabApp6.pdb
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.dll
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\refint\LabApp6.dll
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.pdb
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\LabApp6.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\net8.0\ref\LabApp6.dll
