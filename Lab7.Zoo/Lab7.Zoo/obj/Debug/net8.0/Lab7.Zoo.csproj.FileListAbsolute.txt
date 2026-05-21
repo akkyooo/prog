@@ -1,0 +1,14 @@
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\bin\Debug\net8.0\Lab7.Zoo.exe
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\bin\Debug\net8.0\Lab7.Zoo.deps.json
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\bin\Debug\net8.0\Lab7.Zoo.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\bin\Debug\net8.0\Lab7.Zoo.dll
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\bin\Debug\net8.0\Lab7.Zoo.pdb
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.dll
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\refint\Lab7.Zoo.dll
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.pdb
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\Lab7.Zoo.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\Lab7.Zoo\Lab7.Zoo\obj\Debug\net8.0\ref\Lab7.Zoo.dll
