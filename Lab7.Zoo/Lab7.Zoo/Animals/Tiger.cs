@@ -4,54 +4,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Lab7.Zoo.enums;
 
 namespace Lab7.Zoo.Animals
 {
     public class Tiger : Animal
     {
         public string Subspecies {get; set;}
-        public bool IsAlbino {get; set;}  
-        public int AggressionLevel {get; set;}
+        public bool IsAlbino {get; set;}
 
-        public Tiger(string name, int age, double weight, string sex, string subspecies, bool isAlbino, int aggressionLevel)
+        public Tiger(
+            string name,
+            int age,
+            double weight,
+            string sex,
+            string subspecies,
+            bool isAlbino)
             : base(name, age, weight, sex)
         {
             Subspecies = subspecies;
             IsAlbino = isAlbino;
-            AggressionLevel = aggressionLevel;
-            FoodType = "Meat";
-            DietSize = weight * 0.05;
+
+            FoodType = FoodType.Meat;
+            DietSize = weight * 0.06;
+
             CanReproduce = true;
+            CanLiveTogether = false;
+
+            AggressionLevel = 5;
+            IsPredator = true;
+            HabitatType = "Jungle";
         }
 
-        public override void LiveInfo()
+        public override string LiveInfo()
         {
-            Console.WriteLine($"{Name} — хижак, живе окремо.");
+            return $"{Name} — хижак та живе окремо.";
         }
 
-        public override void Print()
+        public override string Print()
         {
-            base.Print();
-            Console.WriteLine($"Підвид: {Subspecies}");
-            Console.WriteLine($"Альбінос: {(IsAlbino ? "Так" : "Ні")}");
-            Console.WriteLine($"Агресивність: {AggressionLevel}/5");
+            return base.Print() + "\n" +
+                   $"Підвид: {Subspecies}\n" +
+                   $"Альбінос: {(IsAlbino ? "Так" : "Ні")}";
         }
+
+        public override double MonthlyFood()
+        {
+            return Weight * 0.06 * 30;
+        }
+
         public override string ToString()
         {
-            return $"Тигр: {Name}, {Weight} кг, {Subspecies}";
+            return $"Тигр: {Name}, {Weight} кг";
         }
+
         public override bool Equals(object obj)
         {
             if (obj is Tiger other)
+            {
                 return Name == other.Name &&
-                       Subspecies == other.Subspecies &&
-                       IsAlbino == other.IsAlbino;
+                       Subspecies == other.Subspecies;
+            }
 
             return false;
         }
+
         public override int GetHashCode()
         {
-            return HashCode.Combine(Name, Subspecies, IsAlbino);
+            return HashCode.Combine(Name, Subspecies);
         }
     }
 }

@@ -8,8 +8,8 @@ namespace Lab7.Zoo.enums
 {
     public enum CrocodileHabitat
     {
-        Freshwater,
-        Saltwater,
-        Both
+        River,
+        Swamp,
+        Lake
     }
 }

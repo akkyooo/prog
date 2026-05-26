@@ -14,40 +14,68 @@ namespace Lab7.Zoo.Animals
         public int ToothCount {get; set;}
         public CrocodileHabitat Habitat {get; set;}
         public bool IsNocturnal {get; set;}
-        public Crocodile(string name, int age, double weight, string sex, double length, int toothCount, CrocodileHabitat habitat)
+
+        public Crocodile(
+            string name,
+            int age,
+            double weight,
+            string sex,
+            double length,
+            int toothCount,
+            CrocodileHabitat habitat)
             : base(name, age, weight, sex)
         {
             Length = length;
             ToothCount = toothCount;
             Habitat = habitat;
+
             IsNocturnal = true;
-            FoodType = "Meat";
+
+            FoodType = FoodType.Mixed;
             DietSize = weight * 0.03;
+
             CanReproduce = true;
+            CanLiveTogether = false;
+
+            AggressionLevel = 4;
+            IsPredator = true;
+            HabitatType = "Water";
         }
-        public override void LiveInfo()
+
+        public override string LiveInfo()
         {
-            Console.WriteLine($"{Name} живе у воді та полює з засідки.");
+            return $"{Name} живе у воді та полює із засідки.";
         }
-        public override void Print()
+
+        public override string Print()
         {
-            base.Print();
-            Console.WriteLine($"Довжина: {Length} м");
-            Console.WriteLine($"Зубів: {ToothCount}");
-            Console.WriteLine($"Середовище: {Habitat}");
-            Console.WriteLine($"Нічний: {(IsNocturnal ? "Так" : "Ні")}");
+            return base.Print() + "\n" +
+                   $"Довжина: {Length} м\n" +
+                   $"Кількість зубів: {ToothCount}\n" +
+                   $"Тип водойми: {Habitat}\n" +
+                   $"Нічний: {(IsNocturnal ? "Так" : "Ні")}";
         }
+
+        public override double MonthlyFood()
+        {
+            return Weight * 0.03 * 30;
+        }
+
         public override string ToString()
         {
             return $"Крокодил: {Name}, {Weight} кг";
         }
+
         public override bool Equals(object obj)
         {
             if (obj is Crocodile other)
-                return Name == other.Name && Length == other.Length;
-
+            {
+                return Name == other.Name &&
+                       Length == other.Length;
+            }
             return false;
         }
+
         public override int GetHashCode()
         {
             return HashCode.Combine(Name, Length);

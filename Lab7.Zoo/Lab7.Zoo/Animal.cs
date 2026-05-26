@@ -13,46 +13,93 @@ namespace Lab7.Zoo
         public int Age {get; set;}
         public double Weight {get; set;}
         public string Sex {get; set;}
-        public string FoodType {get; set;}
+        public FoodType FoodType {get; set;}
         public double DietSize {get; set;}
         public bool CanReproduce {get; set;}
+        public bool CanLiveTogether {get; set;}
+        public int AggressionLevel {get; set;}
+        public bool IsPredator {get; set;}
+        public string HabitatType {get; set;}
 
-        protected Animal(string name, int age, double weight, string sex)
+        protected Animal(
+            string name,
+            int age,
+            double weight,
+            string sex)
         {
-            this.Name = name;
-            this.Age = age;
-            this.Weight = weight;
-            this.Sex = sex;
+            Name = name;
+            Age = age;
+            Weight = weight;
+            Sex = sex;
         }
-        public abstract void LiveInfo();
+        public abstract string LiveInfo();
+        public virtual string Print()
+        {
+            return
+                $"Ім'я: {Name}\n" +
+                $"Вік: {Age}\n" +
+                $"Вага: {Weight} кг\n" +
+                $"Стать: {Sex}\n" +
+                $"Корм: {FoodType}\n" +
+                $"Добова норма: {DietSize:F1} кг\n" +
+                $"Розмноження: {(CanReproduce ? "Так" : "Ні")}\n" +
+                $"Може жити з іншими: {(CanLiveTogether ? "Так" : "Ні")}\n" +
+                $"Агресивність: {AggressionLevel}/5\n" +
+                $"Хижак: {(IsPredator ? "Так" : "Ні")}\n" +
+                $"Середовище: {HabitatType}\n" +
+                $"Рівень небезпеки: {DangerLevel()}";
+        }
 
-        public virtual void Print()
+        public virtual double MonthlyFood()
         {
-            Console.WriteLine($"Ім'я: {Name}");
-            Console.WriteLine($"Вік: {Age}");
-            Console.WriteLine($"Вага: {Weight}");
-            Console.WriteLine($"Стать: {Sex}");
-            Console.WriteLine($"Корм: {FoodType}, {Weight * 0.05:F1} кг/день");
-            Console.WriteLine($"Розмноження: {(CanReproduce ? "Так" : "Ні")}");
+            return DietSize * 30;
         }
-        public double MonthlyFood()
+
+        public virtual bool CanLiveWith(Animal other)
         {
-            return (Weight * 0.05) * 30;
+            if (IsPredator && !other.IsPredator)
+                return false;
+
+            if (AggressionLevel >= 4 &&
+                other.AggressionLevel >= 4)
+                return false;
+
+            if (HabitatType != other.HabitatType)
+                return false;
+
+            return true;
         }
+
+        public virtual string DangerLevel()
+        {
+            if (AggressionLevel >= 4)
+                return "Небезпечна";
+
+            if (AggressionLevel >= 2)
+                return "Помірна";
+
+            return "Спокійна";
+        }
+
         public override string ToString()
         {
             return $"Тварина: {Name}, вага {Weight} кг";
         }
+
         public override bool Equals(object obj)
         {
             if (obj is Animal other)
-                return Name == other.Name && Weight == other.Weight;
+            {
+                return Name == other.Name &&
+                       Weight == other.Weight;
+            }
 
             return false;
         }
+
         public override int GetHashCode()
         {
             return HashCode.Combine(Name, Weight);
-        }   
+        }
     }
 }
