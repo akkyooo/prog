@@ -1,0 +1,2 @@
+Manufacturer: Name: Oleg, Surname: Ivanov, Birth Year: 1985, Age: 41, Description: Wheel, Weight: 30
+Manufacturer: Name: Anna, Surname: Sydorenko, Birth Year: 1995, Age: 30, Description: Door, Weight: 50

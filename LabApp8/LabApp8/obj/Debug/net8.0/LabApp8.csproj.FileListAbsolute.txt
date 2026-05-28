@@ -1,0 +1,14 @@
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\bin\Debug\net8.0\LabApp8.exe
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\bin\Debug\net8.0\LabApp8.deps.json
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\bin\Debug\net8.0\LabApp8.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\bin\Debug\net8.0\LabApp8.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\bin\Debug\net8.0\LabApp8.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\refint\LabApp8.dll
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.pdb
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\LabApp8.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\LabApp8\LabApp8\obj\Debug\net8.0\ref\LabApp8.dll
