@@ -1,0 +1,15 @@
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\bin\Debug\net10.0\lb1.exe
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\bin\Debug\net10.0\lb1.deps.json
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\bin\Debug\net10.0\lb1.runtimeconfig.json
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\bin\Debug\net10.0\lb1.dll
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\bin\Debug\net10.0\lb1.pdb
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.AssemblyInfoInputs.cache
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.AssemblyInfo.cs
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.csproj.CoreCompileInputs.cache
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.dll
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\refint\lb1.dll
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.pdb
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.genruntimeconfig.cache
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\ref\lb1.dll
+C:\Users\АНДРЕЙ\source\repos\lb1\lb1\obj\Debug\net10.0\lb1.csproj.Up2Date
