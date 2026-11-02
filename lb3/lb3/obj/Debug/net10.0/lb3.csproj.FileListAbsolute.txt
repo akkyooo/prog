@@ -1,0 +1,17 @@
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\lb3.exe
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\lb3.deps.json
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\lb3.runtimeconfig.json
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\lb3.dll
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\lb3.pdb
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.AssemblyInfoInputs.cache
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.AssemblyInfo.cs
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.csproj.CoreCompileInputs.cache
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.dll
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\refint\lb3.dll
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.pdb
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.genruntimeconfig.cache
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\ref\lb3.dll
+C:\Users\zaich\source\repos\lb3\lb3\obj\Debug\net10.0\lb3.csproj.Up2Date
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\Files\text.txt
+C:\Users\zaich\source\repos\lb3\lb3\bin\Debug\net10.0\Files\words.txt
