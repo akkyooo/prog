@@ -1,0 +1,70 @@
+[
+  {
+    "Name": "\u041D\u043E\u0443\u0442\u0431\u0443\u043A",
+    "Stores": [
+      {
+        "StoreName": "Rozetka",
+        "Price": 25000
+      },
+      {
+        "StoreName": "Comfy",
+        "Price": 27000
+      },
+      {
+        "StoreName": "Foxtrot",
+        "Price": 24500
+      }
+    ]
+  },
+  {
+    "Name": "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
+    "Stores": [
+      {
+        "StoreName": "Rozetka",
+        "Price": 12000
+      },
+      {
+        "StoreName": "Comfy",
+        "Price": 11500
+      },
+      {
+        "StoreName": "Foxtrot",
+        "Price": 13000
+      }
+    ]
+  },
+  {
+    "Name": "\u041D\u0430\u0432\u0443\u0448\u043D\u0438\u043A\u0438",
+    "Stores": [
+      {
+        "StoreName": "Rozetka",
+        "Price": 2000
+      },
+      {
+        "StoreName": "Comfy",
+        "Price": 1800
+      },
+      {
+        "StoreName": "Foxtrot",
+        "Price": 2200
+      }
+    ]
+  },
+  {
+    "Name": "\u041C\u043E\u043D\u0456\u0442\u043E\u0440",
+    "Stores": [
+      {
+        "StoreName": "Rozetka",
+        "Price": 8000
+      },
+      {
+        "StoreName": "Comfy",
+        "Price": 8500
+      },
+      {
+        "StoreName": "Foxtrot",
+        "Price": 7800
+      }
+    ]
+  }
+]
