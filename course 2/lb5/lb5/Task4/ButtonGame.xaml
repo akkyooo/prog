@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="lb5.Task4.ButtonGame"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             Background="White">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <TextBlock Text="Приховай усі кнопки!" FontSize="24" HorizontalAlignment="Center" Margin="10"/>
+
+        <UniformGrid x:Name="GameGrid" Rows="2" Columns="3" Width="500" Height="180">
+
+            <Button Content="Кнопка 1" Background="LightCoral" Margin="5" Click="GameButton_Click"/>
+
+            <Button Content="Кнопка 2" Background="LightBlue" Margin="5" Click="GameButton_Click"/>
+
+            <Button Content="Кнопка 3" Background="LightGreen" Margin="5" Click="GameButton_Click"/>
+
+            <Button Content="Кнопка 4" Background="Khaki" Margin="5" Click="GameButton_Click"/>
+
+            <Button Content="Кнопка 5" Background="Plum" Margin="5" Click="GameButton_Click"/>
+
+        </UniformGrid>
+
+        <Button Content="Почати знову" Width="150" Height="40" Margin="10" Click="ResetButton_Click"/>
+
+    </StackPanel>
+</UserControl>
