@@ -1,0 +1,34 @@
+<Window x:Class="DovidnykMelomana.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Налаштування" Width="480" SizeToContent="Height" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Style="{StaticResource AppWindowStyle}">
+    <StackPanel Margin="16">
+        <Border Style="{StaticResource Card}">
+            <StackPanel>
+                <TextBlock Text="Обліковий запис" Style="{StaticResource TitleText}" FontSize="16"/>
+                <TextBlock Style="{StaticResource SubtitleText}" Margin="0,4,0,0">
+                    <Run Text="Логін:"/> <Run Text="{Binding Login, Mode=OneWay}" FontWeight="SemiBold"/>
+                    <Run Text="· зареєстровано"/> <Run Text="{Binding RegisteredText, Mode=OneWay}"/>
+                </TextBlock>
+                <TextBlock Text="Ім'я для показу" Style="{StaticResource FieldLabel}"/>
+                <TextBox Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Оформлення" Style="{StaticResource TitleText}" FontSize="16" Margin="0,18,0,0"/>
+                <TextBlock Text="Кольорова тема" Style="{StaticResource FieldLabel}"/>
+                <ComboBox ItemsSource="{Binding Themes}" SelectedItem="{Binding SelectedTheme}" Width="180" HorizontalAlignment="Left"/>
+                <TextBlock Text="Тема застосовується одразу після вибору." Style="{StaticResource SubtitleText}" Margin="0,4,0,0"/>
+
+                <TextBlock Text="Дані" Style="{StaticResource TitleText}" FontSize="16" Margin="0,18,0,0"/>
+                <TextBlock Text="Файл каталогу" Style="{StaticResource FieldLabel}"/>
+                <TextBox Text="{Binding DataFilePath, Mode=OneWay}" IsReadOnly="True"/>
+            </StackPanel>
+        </Border>
+        <TextBlock Text="{Binding ErrorSummary}" Style="{StaticResource ErrorText}"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Зберегти" Command="{Binding SaveCommand}" Style="{StaticResource PrimaryButton}" IsDefault="True" Padding="20,7"/>
+            <Button Content="Скасувати" Command="{Binding CancelCommand}" IsCancel="True" Padding="16,7" Margin="0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

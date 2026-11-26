@@ -1,0 +1,18 @@
+<UserControl x:Class="DovidnykMelomana.Views.GenresView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,8">
+            <Button Content="＋ Додати жанр" Command="{Binding AddCommand}" Style="{StaticResource PrimaryButton}"/>
+            <Button Content="Редагувати" Command="{Binding EditCommand}"/>
+            <Button Content="Видалити" Command="{Binding DeleteCommand}"/>
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding Rows}" SelectedItem="{Binding SelectedRow}" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Жанр" Binding="{Binding Name}" Width="200" FontWeight="SemiBold"/>
+                <DataGridTextColumn Header="Альбомів" Binding="{Binding AlbumCount}" Width="80"/>
+                <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</UserControl>
