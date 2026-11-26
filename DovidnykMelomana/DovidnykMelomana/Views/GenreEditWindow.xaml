@@ -1,0 +1,23 @@
+<Window x:Class="DovidnykMelomana.Views.GenreEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding WindowTitle}" Width="400" SizeToContent="Height" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Style="{StaticResource AppWindowStyle}">
+    <StackPanel Margin="16">
+        <Border Style="{StaticResource Card}">
+            <StackPanel>
+                <TextBlock Text="Назва жанру *" Style="{StaticResource FieldLabel}" Margin="0,0,0,3"/>
+                <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Короткий опис" Style="{StaticResource FieldLabel}"/>
+                <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" Height="70"
+                         TextWrapping="Wrap" AcceptsReturn="True"/>
+            </StackPanel>
+        </Border>
+        <TextBlock Text="{Binding ErrorSummary}" Style="{StaticResource ErrorText}"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Зберегти" Command="{Binding SaveCommand}" Style="{StaticResource PrimaryButton}" IsDefault="True" Padding="20,7"/>
+            <Button Content="Скасувати" Command="{Binding CancelCommand}" IsCancel="True" Padding="16,7" Margin="0"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
