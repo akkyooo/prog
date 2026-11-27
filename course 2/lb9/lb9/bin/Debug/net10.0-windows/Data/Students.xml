@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Students>
+	<Student>
+		<Surname>Іваненко</Surname>
+		<Name>Олександр</Name>
+		<Age>20</Age>
+		<Gender>Чоловіча</Gender>
+	</Student>
+
+	<Student>
+		<Surname>Петренко</Surname>
+		<Name>Марія</Name>
+		<Age>19</Age>
+		<Gender>Жіноча</Gender>
+	</Student>
+
+	<Student>
+		<Surname>Шевченко</Surname>
+		<Name>Андрій</Name>
+		<Age>21</Age>
+		<Gender>Чоловіча</Gender>
+	</Student>
+</Students>

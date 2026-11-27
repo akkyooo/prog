@@ -1,0 +1,196 @@
+﻿<Window x:Class="lb9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список студентів"
+        Height="600"
+        Width="850"
+        MinHeight="450"
+        MinWidth="650"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F6FA">
+
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Margin="0,0,0,20">
+
+            <TextBlock Text="Облік студентів"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#26344A"/>
+
+            <TextBlock Text="Перегляд та керування списком студентів"
+                       FontSize="14"
+                       Foreground="#718096"
+                       Margin="0,5,0,0"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    Margin="0,0,0,15">
+
+            <Button Content="Додати"
+                    Command="{Binding AddCommand}"
+                    Width="115"
+                    Height="38"
+                    Margin="0,0,10,0"
+                    Background="#315C91"
+                    Foreground="White"
+                    BorderThickness="0"/>
+
+            <Button Content="Редагувати"
+                    Command="{Binding EditCommand}"
+                    Width="125"
+                    Height="38"
+                    Margin="0,0,10,0"
+                    Background="#DCE2EB"
+                    BorderThickness="0"/>
+
+            <Button Content="Видалити"
+                    Command="{Binding DeleteCommand}"
+                    Width="115"
+                    Height="38"
+                    Background="#B94A48"
+                    Foreground="White"
+                    BorderThickness="0"/>
+
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+
+            <ListBox ItemsSource="{Binding Students}"
+                     SelectedItem="{Binding SelectedStudent}"
+                     AlternationCount="2"
+                     BorderThickness="0"
+                     Background="Transparent"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+
+                        <Setter Property="Padding" Value="12"/>
+                        <Setter Property="Margin" Value="0,0,0,5"/>
+                        <Setter Property="HorizontalContentAlignment"
+                                Value="Stretch"/>
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+
+                        <Style.Triggers>
+
+                            <Trigger Property="ItemsControl.AlternationIndex"
+                                     Value="1">
+
+                                <Setter Property="Background"
+                                        Value="#E8EEF6"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsSelected"
+                                     Value="True">
+
+                                <Setter Property="BorderBrush"
+                                        Value="#315C91"/>
+
+                                <Setter Property="BorderThickness"
+                                        Value="2"/>
+
+                            </Trigger>
+
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <CheckBox Grid.Column="0"
+                                      IsChecked="{Binding IsMarked}"
+                                      VerticalAlignment="Center"
+                                      Margin="0,0,15,0"/>
+
+                            <StackPanel Grid.Column="1"
+                                        VerticalAlignment="Center">
+
+                                <TextBlock Text="{Binding FullName}"
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           Foreground="#26344A"/>
+
+                                <TextBlock Text="{Binding Gender}"
+                                           FontSize="12"
+                                           Foreground="#718096"
+                                           Margin="0,3,0,0"/>
+
+                            </StackPanel>
+
+                            <TextBlock Grid.Column="2"
+                                       Text="{Binding AgeText}"
+                                       FontSize="14"
+                                       Foreground="#315C91"
+                                       VerticalAlignment="Center"
+                                       Margin="10,0,15,0"/>
+
+                        </Grid>
+
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
+            </ListBox>
+
+            <TextBlock Text="Список студентів порожній"
+                       FontSize="18"
+                       FontWeight="SemiBold"
+                       Foreground="#8793A5"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       IsHitTestVisible="False">
+
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+
+                        <Setter Property="Visibility"
+                                Value="Collapsed"/>
+
+                        <Style.Triggers>
+
+                            <DataTrigger Binding="{Binding IsEmpty}"
+                                         Value="True">
+
+                                <Setter Property="Visibility"
+                                        Value="Visible"/>
+
+                            </DataTrigger>
+
+                        </Style.Triggers>
+
+                    </Style>
+                </TextBlock.Style>
+
+            </TextBlock>
+
+        </Grid>
+
+        <TextBlock Grid.Row="3"
+                   Text="{Binding Students.Count, StringFormat='Усього студентів: {0}'}"
+                   FontSize="13"
+                   Foreground="#718096"
+                   HorizontalAlignment="Right"
+                   Margin="0,12,0,0"/>
+
+    </Grid>
+</Window>
