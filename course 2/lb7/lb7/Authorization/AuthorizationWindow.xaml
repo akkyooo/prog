@@ -1,0 +1,63 @@
+﻿<Window x:Class="lb7.Authorization.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизація"
+        Height="620"
+        Width="430"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource BackgroundColor}">
+
+    <Grid Margin="35">
+
+        <StackPanel VerticalAlignment="Center">
+
+            <TextBlock Text="Вхід до акаунта"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="{DynamicResource MainColor}"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,25"/>
+
+            <TextBlock Text="Логін або електронна пошта"
+                       Style="{StaticResource LabelStyle}"/>
+
+            <TextBox x:Name="LoginBox"
+                     Style="{StaticResource InputStyle}"/>
+
+            <TextBlock Text="Пароль"
+                       Style="{StaticResource LabelStyle}"/>
+
+            <PasswordBox x:Name="PasswordBox"
+                         Style="{StaticResource PasswordStyle}"/>
+
+            <Button Content="Увійти"
+                    Style="{StaticResource MainButton}"
+                    Click="Login_Click"/>
+
+            <TextBlock Text="Або увійдіть через"
+                       HorizontalAlignment="Center"
+                       Margin="0,18,0,8"
+                       Foreground="{DynamicResource TextColor}"/>
+
+            <Button Content="G   Увійти через Google"
+                    Style="{StaticResource GoogleButton}"
+                    Click="Google_Click"/>
+
+            <Button Content="f   Увійти через Facebook"
+                    Style="{StaticResource FacebookButton}"
+                    Click="Facebook_Click"/>
+
+            <Button Content="◎   Увійти через Instagram"
+                    Style="{StaticResource InstagramButton}"
+                    Click="Instagram_Click"/>
+
+            <Button Content="Створити акаунт"
+                    Style="{StaticResource LinkButton}"
+                    Margin="0,16,0,0"
+                    Click="Register_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
