@@ -1,0 +1,209 @@
+﻿<Window x:Class="lb8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Облік кандидатів"
+        Height="700"
+        Width="1100"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="15">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Кандидати на вакантну посаду"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,15"/>
+
+        <Border Grid.Row="1"
+                BorderBrush="LightGray"
+                BorderThickness="1"
+                CornerRadius="5"
+                Padding="10"
+                Margin="0,0,0,10">
+
+            <WrapPanel VerticalAlignment="Center">
+
+                <StackPanel Width="180" Margin="5">
+                    <TextBlock Text="Пошук за ПІБ"/>
+
+                    <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,5"/>
+                </StackPanel>
+
+                <StackPanel Width="160" Margin="5">
+                    <TextBlock Text="Освіта"/>
+
+                    <ComboBox SelectedValuePath="Content"
+                              SelectedValue="{Binding SelectedEducation}"
+                              Margin="0,5">
+
+                        <ComboBoxItem Content="Усі"/>
+                        <ComboBoxItem Content="Середня"/>
+                        <ComboBoxItem Content="Середня спеціальна"/>
+                        <ComboBoxItem Content="Вища"/>
+
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Width="140" Margin="5">
+                    <TextBlock Text="Іноземна мова"/>
+
+                    <ComboBox SelectedValuePath="Content"
+                              SelectedValue="{Binding SelectedLanguage}"
+                              Margin="0,5">
+
+                        <ComboBoxItem Content="Усі"/>
+                        <ComboBoxItem Content="Англійська"/>
+                        <ComboBoxItem Content="Німецька"/>
+                        <ComboBoxItem Content="Французька"/>
+
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Width="130" Margin="5">
+                    <TextBlock Text="Комп'ютер"/>
+
+                    <ComboBox SelectedValuePath="Content"
+                              SelectedValue="{Binding SelectedComputer}"
+                              Margin="0,5">
+
+                        <ComboBoxItem Content="Усі"/>
+                        <ComboBoxItem Content="Так"/>
+                        <ComboBoxItem Content="Ні"/>
+
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Width="140" Margin="5">
+                    <TextBlock Text="Рекомендації"/>
+
+                    <ComboBox SelectedValuePath="Content"
+                              SelectedValue="{Binding SelectedRecommendations}"
+                              Margin="0,5">
+
+                        <ComboBoxItem Content="Усі"/>
+                        <ComboBoxItem Content="Так"/>
+                        <ComboBoxItem Content="Ні"/>
+
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Width="130" Margin="5">
+                    <TextBlock Text="Мінімальний стаж"/>
+
+                    <ComboBox SelectedValuePath="Content"
+                              SelectedValue="{Binding SelectedMinimumExperience}"
+                              Margin="0,5">
+
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="15"/>
+
+                    </ComboBox>
+                </StackPanel>
+
+            </WrapPanel>
+        </Border>
+
+        <DataGrid Grid.Row="2"
+                  x:Name="CandidatesGrid"
+                  ItemsSource="{Binding CandidatesView}"
+                  SelectedItem="{Binding SelectedCandidate, Mode=TwoWay}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  CanUserAddRows="False"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto"
+                  MouseDoubleClick="CandidatesGrid_MouseDoubleClick">
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="ПІБ"
+                                    Binding="{Binding FullName}"
+                                    Width="180"/>
+
+                <DataGridTextColumn Header="Дата народження"
+                                    Binding="{Binding BirthDate, StringFormat={}{0:dd.MM.yyyy}}"
+                                    Width="120"/>
+
+                <DataGridTextColumn Header="Освіта"
+                                    Binding="{Binding Education}"
+                                    Width="150"/>
+
+                <DataGridCheckBoxColumn Header="Англійська"
+                                        Binding="{Binding English}"
+                                        Width="90"/>
+
+                <DataGridTextColumn Header="Рівень англійської"
+                                    Binding="{Binding EnglishLevel}"
+                                    Width="180"/>
+
+                <DataGridCheckBoxColumn Header="Німецька"
+                                        Binding="{Binding German}"
+                                        Width="90"/>
+
+                <DataGridTextColumn Header="Рівень німецької"
+                                    Binding="{Binding GermanLevel}"
+                                    Width="180"/>
+
+                <DataGridCheckBoxColumn Header="Французька"
+                                        Binding="{Binding French}"
+                                        Width="90"/>
+
+                <DataGridTextColumn Header="Рівень французької"
+                                    Binding="{Binding FrenchLevel}"
+                                    Width="180"/>
+
+                <DataGridCheckBoxColumn Header="Комп'ютер"
+                                        Binding="{Binding ComputerSkills}"
+                                        Width="90"/>
+
+                <DataGridTextColumn Header="Стаж роботи"
+                                    Binding="{Binding WorkExperience}"
+                                    Width="100"/>
+
+                <DataGridCheckBoxColumn Header="Рекомендації"
+                                        Binding="{Binding Recommendations}"
+                                        Width="110"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0,15,0,0">
+
+            <Button Content="Додати"
+                    Width="110"
+                    Height="35"
+                    Margin="5"
+                    Click="AddButton_Click"/>
+
+            <Button Content="Редагувати"
+                    Width="110"
+                    Height="35"
+                    Margin="5"
+                    Click="EditButton_Click"/>
+
+            <Button Content="Видалити"
+                    Width="110"
+                    Height="35"
+                    Margin="5"
+                    Click="DeleteButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
